@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    height: 550px;
+    margin:  auto;
+}
+.span{
+    width: 100%;
+    height: 40px;
+}
+.title{
+    width: 400px;
+    height: auto;   
+    margin-top: 20px; 
+    margin-left: 420px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.container .row{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .row .col{
+    width: 280px;
+    height: 480px;
+    background-color: rgb(203, 206, 205);
+    /* margin-top: 20px; */
+    border-radius: 6px;
+    overflow: hidden;
+}
+.box-card{
+    width: 100%;
+    height: 82%;
+    overflow: hidden;
+    position: relative;
+}
+.box-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.box-card:hover img{
+    transform: scale(1.1);
+}
+.box-title{
+    width: 100%;
+    height: 18%;
+    /* background-color: rgb(194, 201, 198); */
+    padding:10px;
+    
+}
+
+.box-title a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #010194;
+    transition: 1s;
+}
+.box-title a:hover{
+    color: blue;
+}
+.box-price{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 90, 0);
+    font-size: 16px;
+}
+.box-icon{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    top: 45px;
+    background-color: saddlebrown;
+    border-radius: 100%;
+    
+}
+.location{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    left: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.location p{
+    margin-left: 5px;
+}
+.box-icon .bars{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #afafaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.801);
+    position: absolute;
+    transition: 0.4s;
+    top: 0;
+    left: 0;
+}
+.box-icon .facebook{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #afafafe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #084c4e;
+    position: absolute;
+    transition: 0.4s;
+    top: 0;
+}
+.box-icon .linkedin{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #afafafe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #084c4e;
+    position: absolute;
+    transition: 0.4s;
+    top: 0;
+    right: 0;
+}
+.box-icon .telegram{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #afafafe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #084c4e;   
+    position: absolute;
+    transition: 0.4s;
+    right: 0;
+    bottom: 0;
+}
+.box-icon .phone{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #afafafe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #084c4e;
+    position: absolute;
+    transition: 0.4s;
+    left: 0;
+    bottom: 0;
+}
+.box-icon .instagram{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #afafafe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #084c4e;
+    position: absolute;
+    transition: 0.4s;
+    left: 0;
+    top: 0;
+}
+.telegram:hover, .facebook:hover, .instagram:hover, .linkedin:hover, .phone:hover{
+    background-color: white;
+}
+
+.box-icon:hover .facebook{
+    top: -41px;
+    
+}
+.box-icon:hover .linkedin{
+    top: -16px;
+    right: -38px;
+    
+}
+.box-icon:hover .telegram{
+    right: -28px;
+    bottom: -30px;
+}
+.box-icon:hover .phone{
+    left: -24px;
+    bottom: -33px;
+}
+.box-icon:hover .instagram{
+    left: -40px;
+    top: -10px;
+}
